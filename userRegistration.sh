@@ -41,3 +41,13 @@ then
 else
         echo "invalid"
 fi
+
+read -p "password - " Passwd
+Password="^[A-Z]{1,}[a-z]{1,}[0-9]{1,}[\~\!\@\#\$\%\^\&\*\+\-]{1,}[a-z]{5,}$";
+
+if [[ $Passwd =~ $Password ]]
+then
+	echo "valid"
+else
+	echo "invalid"
+fi
