@@ -32,3 +32,12 @@ else
         echo "invalid"
 fi
 
+read -p "Mobile No. - " MobileNo
+Mobile="^(\+91)?[[:space:]][6-9]{1}[0-9]{9}$";
+
+if [[ $MobileNo =~ $Mobile ]]
+then
+        echo "valid"
+else
+        echo "invalid"
+fi
